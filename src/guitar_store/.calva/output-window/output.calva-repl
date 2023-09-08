@@ -50,3 +50,12 @@ clj꞉user꞉>  ; Use `alt+enter` to evaluate
 clj꞉user꞉> 
 ; Jack-in done.
 clj꞉user꞉> 
+nil
+clj꞉guitar-store.db꞉> 
+nil
+clj꞉guitar-store.db꞉> 
+#'guitar-store.db/mysql-db
+clj꞉guitar-store.db꞉> 
+({:admin_id 1, :email_address "admin@guitarshop.com", :password "a123", :first_name "Admin", :last_name "User"}
+ {:admin_id 2, :email_address "admin2@guitarshop.com", :password "a222", :first_name "Admin2", :last_name "User2"})
+clj꞉guitar-store.db꞉> 

@@ -1,4 +1,5 @@
-(ns guitar-store.db)
+(ns guitar-store.db
+  (:require [clojure.java.jdbc :as j]))
 
 (def mysql-db {:host "localhost"
                :dbtype "mysql"
@@ -7,5 +8,4 @@
                :password "password"})
 
 (j/query mysql-db
-         ["select * from administrators"]
-         {:row-fn :cost})
+         ["select * from administrators"])
