@@ -8,7 +8,7 @@
                :password "password"})
 
 (j/query mysql-db
-         ["select * from administrators"])
+         ["select * from administrators where admin_id = ?" 1])
 
 (j/query mysql-db
          ["select * from products"])

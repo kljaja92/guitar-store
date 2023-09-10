@@ -10,7 +10,7 @@
 ;   - See https://calva.io/connect-sequences/
 ; 
 ; Starting Jack-in Terminal: pushd c:\Users\Milan\guitar-store\src\guitar_store & java -jar ".calva\deps.clj.jar" -Sdeps "{:deps {nrepl/nrepl {:mvn/version,""1.0.0""},cider/cider-nrepl {:mvn/version,""0.28.5""}}}" -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]" & popd
-; Using host:port 127.0.0.1:62226 ...
+; Using host:port 127.0.0.1:49820 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; TIPS:
@@ -28,6 +28,9 @@ clj꞉user꞉> 
 clj꞉user꞉> 
 nil
 clj꞉guitar-store.db꞉> 
+; Syntax error compiling at (db.clj:10:1).
+; Unable to resolve symbol: mysql-db in this context
+clj꞉guitar-store.db꞉> 
 #'guitar-store.db/mysql-db
 clj꞉guitar-store.db꞉> 
 ({:admin_id 1, :email_address "admin@guitarshop.com", :password "a123", :first_name "Admin", :last_name "User"}
@@ -40,7 +43,7 @@ clj꞉guitar-store.db꞉> 
   :description "G&L",
   :list_price 71000.00M,
   :discount_percent 0.00M,
-  :date_added #object[java.time.LocalDateTime 0x74680600 "2023-09-07T10:00"]}
+  :date_added #object[java.time.LocalDateTime 0x38ad813d "2023-09-07T10:00"]}
  {:product_id 2,
   :category_id 1,
   :product_code "Electric2",
@@ -48,7 +51,7 @@ clj꞉guitar-store.db꞉> 
   :description "Mooer",
   :list_price 135000.00M,
   :discount_percent 0.00M,
-  :date_added #object[java.time.LocalDateTime 0xbdd4349 "2023-09-07T11:00"]}
+  :date_added #object[java.time.LocalDateTime 0x1cb5b4a7 "2023-09-07T11:00"]}
  {:product_id 3,
   :category_id 2,
   :product_code "Bass1",
@@ -56,7 +59,7 @@ clj꞉guitar-store.db꞉> 
   :description "G&L Best Bass",
   :list_price 84000.00M,
   :discount_percent 0.00M,
-  :date_added #object[java.time.LocalDateTime 0x1e545641 "2023-09-07T12:00"]}
+  :date_added #object[java.time.LocalDateTime 0x9ae21df "2023-09-07T12:00"]}
  {:product_id 4,
   :category_id 2,
   :product_code "Bass2",
@@ -64,10 +67,118 @@ clj꞉guitar-store.db꞉> 
   :description "PRS Best Bass",
   :list_price 148000.00M,
   :discount_percent 0.00M,
-  :date_added #object[java.time.LocalDateTime 0x36d2b989 "2023-09-07T13:00"]})
+  :date_added #object[java.time.LocalDateTime 0x6c7634f "2023-09-07T13:00"]})
 clj꞉guitar-store.db꞉> 
-; Execution error (FileNotFoundException) at guitar-store.Domain.administrators/eval8352$loading (REPL:1).
-; Could not locate clojure/java/jdbc/sql__init.class, clojure/java/jdbc/sql.clj or clojure/java/jdbc/sql.cljc on classpath.
+; Syntax error compiling at (administrators.clj:5:1).
+; Unable to resolve symbol: defn in this context
 clj꞉guitar-store.Domain.administrators꞉> 
 nil
+clj꞉guitar-store.Domain.administrators꞉> 
+; Syntax error compiling at (administrators.clj:6:3).
+; No such namespace: j
+clj꞉guitar-store.Domain.administrators꞉> 
+nil
+clj꞉guitar-store.Domain.administrators꞉> 
+; Syntax error compiling at (administrators.clj:6:3).
+; Unable to resolve symbol: mysql-db in this context
+clj꞉guitar-store.Domain.administrators꞉> 
+nil
+clj꞉guitar-store.Domain.administrators꞉> 
+#'guitar-store.Domain.administrators/mysql-db
+clj꞉guitar-store.Domain.administrators꞉> 
+#'guitar-store.Domain.administrators/administrator
+clj꞉guitar-store.Domain.administrators꞉> 
+nil
+clj꞉guitar-store.Domain.administrators꞉> 
+; nREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd c:\Users\Milan\guitar-store\src\guitar_store & java -jar ".calva\deps.clj.jar" -Sdeps "{:deps {nrepl/nrepl {:mvn/version,""1.0.0""},cider/cider-nrepl {:mvn/version,""0.28.5""}}}" -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]" & popd
+; Using host:port 127.0.0.1:49895 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+nil
+clj꞉guitar-store.Domain.administrators꞉> 
+#'guitar-store.Domain.administrators/mysql-db
+clj꞉guitar-store.Domain.administrators꞉> 
+#'guitar-store.Domain.administrators/administrator
+clj꞉guitar-store.Domain.administrators꞉> 
+nil
+clj꞉guitar-store.db꞉> 
+#'guitar-store.db/mysql-db
+clj꞉guitar-store.db꞉> 
+({:admin_id 1, :email_address "admin@guitarshop.com", :password "a123", :first_name "Admin", :last_name "User"}
+ {:admin_id 2, :email_address "admin2@guitarshop.com", :password "a222", :first_name "Admin2", :last_name "User2"})
+clj꞉guitar-store.db꞉> 
+({:product_id 1,
+  :category_id 1,
+  :product_code "Electric1",
+  :product_name "G&L Tribute Legacy Black MP Poplar",
+  :description "G&L",
+  :list_price 71000.00M,
+  :discount_percent 0.00M,
+  :date_added #object[java.time.LocalDateTime 0x1091b648 "2023-09-07T10:00"]}
+ {:product_id 2,
+  :category_id 1,
+  :product_code "Electric2",
+  :product_name "Mooer GTRS P800 Dark Night",
+  :description "Mooer",
+  :list_price 135000.00M,
+  :discount_percent 0.00M,
+  :date_added #object[java.time.LocalDateTime 0x6697f808 "2023-09-07T11:00"]}
+ {:product_id 3,
+  :category_id 2,
+  :product_code "Bass1",
+  :product_name "G&L Tribute Legacy Black MP Poplar",
+  :description "G&L Best Bass",
+  :list_price 84000.00M,
+  :discount_percent 0.00M,
+  :date_added #object[java.time.LocalDateTime 0x75809930 "2023-09-07T12:00"]}
+ {:product_id 4,
+  :category_id 2,
+  :product_code "Bass2",
+  :product_name "PRS SE Kingfisher Bass, Faded Blueburst Wrap",
+  :description "PRS Best Bass",
+  :list_price 148000.00M,
+  :discount_percent 0.00M,
+  :date_added #object[java.time.LocalDateTime 0x3c734fc1 "2023-09-07T13:00"]})
+clj꞉guitar-store.db꞉> 
+nil
+clj꞉guitar-store.db꞉> 
+#'guitar-store.db/mysql-db
+clj꞉guitar-store.db꞉> 
+; Execution error (SQLException) at com.mysql.cj.jdbc.exceptions.SQLError/createSQLException (SQLError.java:129).
+; No value specified for parameter 1
+clj꞉guitar-store.db꞉> 
+({:admin_id 1, :email_address "admin@guitarshop.com", :password "a123", :first_name "Admin", :last_name "User"})
+clj꞉guitar-store.db꞉> 
+({:admin_id 1, :email_address "admin@guitarshop.com", :password "a123", :first_name "Admin", :last_name "User"})
+clj꞉guitar-store.db꞉> 
+nil
+clj꞉guitar-store.Domain.administrators꞉> 
+#'guitar-store.Domain.administrators/mysql-db
+clj꞉guitar-store.Domain.administrators꞉> 
+nil
+clj꞉guitar-store.Domain.administrators꞉> 
+#'guitar-store.Domain.administrators/mysql-db
+clj꞉guitar-store.Domain.administrators꞉> 
+#'guitar-store.Domain.administrators/administrator
 clj꞉guitar-store.Domain.administrators꞉> 
