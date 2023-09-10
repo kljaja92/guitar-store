@@ -9,3 +9,6 @@
 
 (j/query mysql-db
          ["select * from administrators"])
+
+(j/query mysql-db
+         ["select * from products"])
