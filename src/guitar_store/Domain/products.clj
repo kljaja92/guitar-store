@@ -1,4 +1,5 @@
-(ns guitar-store.db
+(ns guitar-store.Domain.products
+  (:refer-clojure :exclude [get])
   (:require [clojure.java.jdbc :as j]))
 
 (def mysql-db {:host "localhost"
@@ -7,8 +8,6 @@
                :user "root"
                :password "password"})
 
-(j/query mysql-db
-         ["select * from administrators where admin_id = ?" 1])
-
-(j/query mysql-db
-         ["select * from products p"])
+(defn allProducts []
+  (j/query mysql-db
+  ["select * from products"]))

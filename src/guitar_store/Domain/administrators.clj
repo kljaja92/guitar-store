@@ -19,8 +19,8 @@
 (defn updateAdministrators [admin_id administrators]
   (j/update! mysql-db :administrators administrators (j/where {:admin_id admin_id})))
 
-(defn insertAdministrator [params]
-  (j/insert! mysql-db :administrators params))
+(defn insertAdministrator [admin]
+  (j/insert! mysql-db :administrators admin))
 
 (defn removeAdministrator [admin_id]
   (j/execute! mysql-db ["delete from administrators where admin_id = ?" admin_id]))
