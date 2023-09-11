@@ -15,3 +15,12 @@
 (defn get [admin_id]
   (first (j/query mysql-db
                   ["select * from administrators where admin_id = ?" admin_id])))
+
+(defn updateAdministrators [admin_id administrators]
+  (j/update! mysql-db :administrators administrators (j/where {:admin_id admin_id})))
+
+(defn insertAdministrator [params]
+  (j/insert! mysql-db :administrators params))
+
+(defn removeAdministrator [admin_id]
+  (j/execute! mysql-db ["delete from administrators where admin_id = ?" admin_id]))
